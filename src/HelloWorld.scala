@@ -18,7 +18,30 @@ object HelloWorld {
   
   def main(args: Array[String]):Unit = {
      println("Hello World")
-
+     
+     var i = 0
+     while(i<10){
+       println(i)
+       i += 1
+     }
+     if (age < 18){
+       println("No admit")
+     }else{
+       println("Come on in")
+     }
+     
+      val response = if (age < 18){
+       "No admit"
+     }else{
+       "Come on in"
+     }
+      
+      println(
+  if (age < 18)
+       "No admit"
+     else
+       "Come on in"
+     )
   }
   
   // This is an expression
