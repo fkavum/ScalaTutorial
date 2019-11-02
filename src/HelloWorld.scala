@@ -71,8 +71,12 @@ object HelloWorld {
          }
        }
        
-       
-       
+       val str = "123a"
+       val num = try{ str.toInt
+       }catch{
+         // num = 0 yapıyor
+         case ex:NumberFormatException => 0
+       }
       
   }
   
