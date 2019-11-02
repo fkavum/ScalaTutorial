@@ -36,12 +36,32 @@ object HelloWorld {
        "Come on in"
      }
       
-      println(
-  if (age < 18)
-       "No admit"
-     else
-       "Come on in"
-     )
+      println(if (age < 18)"No admit"else"Come on in")
+      
+      for (i <- 1 to 10){ // 1 and 10 included
+        println(i)
+      }
+      
+      for (i <- 1 until 10; if i%3 == 0 || i%5 == 0; j<- 'a' to 'c'){
+        println(i + " " + j)
+      }
+      
+      // To make for loop as an expression we put yield
+       val stuff =  for (i <- 1 until 10; if i%3 == 0 || i%5 == 0; j<- 'a' to 'c')
+       yield{
+        i -> j
+      }
+       
+        val stuff2 =  for {i <- 1 until 10
+          if i%3 == 0 || i%5 == 0
+          j<- 'a' to 'c'}
+       yield{
+        i -> j
+      }
+       
+       println(stuff)
+      
+      
   }
   
   // This is an expression
