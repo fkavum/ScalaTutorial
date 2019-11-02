@@ -20,4 +20,13 @@ object HelloWorld {
      println("Hello World")
 
   }
+  
+  
+  val message = name + " is " + (age+1) + " years old."
+  // Yukarıdaki ile aynı sonucu verir.
+  val messages2 = s"$name is ${age+1} years old."
+  val str = s"The second element of t is ${t._2}."
+  
+  
+  
 }
