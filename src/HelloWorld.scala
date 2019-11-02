@@ -39,4 +39,12 @@ object HelloWorld {
   // *5 is for repeating  it returns true btw if we exclude *5 
   name == "Pat Cook"*5
   
+  val square = (x:Double) => x*x
+  val square2:Double => Double = x => x*x
+  val twice:Double => Double = _*2
+  val lt: (Double,Double) => Boolean = _<_
+  //def square (x:Double):Double = x*x
+  
+  
+  
 }
