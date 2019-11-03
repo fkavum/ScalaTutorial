@@ -1,5 +1,7 @@
 
 
+package basics
+
 object HelloWorld {
 
   // kinda constant
