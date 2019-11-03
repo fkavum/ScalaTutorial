@@ -16,7 +16,36 @@ object Libraries {
     val age = readInt()
     
     
+    val lst = buildList()
+    println(concatStrings(lst))
+    
   }
+  
+  
+  
+  def buildList(): List[String] = {
+    val input = readLine()
+    if(input == "quit") Nil
+    else input::buildList()
+  }
+  
+  def concatStrings(words: List[String]):String = {
+    if(words.isEmpty) ""
+    else {
+   
+      words.head + concatStrings(words.tail)}
+  }
+  
+    def concatStringsPat(words: List[String]):String = words match{
+      case Nil => ""
+      case h::t => h + concatStringsPat(t)
+   
+  }
+  
+  
+  
+  
+  
   
   /*
    * Arrays - List - Tabulate - Fill
@@ -77,6 +106,10 @@ object Libraries {
    *  a.filter(_<5)
    *  a.filter(_%5==0)
    *  
+   *  
+   *  "This is test".filter(_<"l")   return  Thi i a e
+   * 
+   *  
    *  a.count(_%2 == 0)
    *  a.exists(_<5)  --> true folse 
    *  a.forall(x<10) --> return true or false
@@ -89,6 +122,9 @@ object Libraries {
    *  a.reduce(_+_)  --> sum verir
    *  
    *  a.minBy(_.length)
+   *  
+   *  "This is a test".filter (c => "aeiou".contains(c))
+   *  "This is a test".split(" ") --> explode
    */
   
   
