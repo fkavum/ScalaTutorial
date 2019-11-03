@@ -68,6 +68,27 @@ object Libraries {
    *  
    *  a.zip()
    *  a.zipWithIndex
+   *  
+   *  -----------------------------------
+   *  a.foreach(println)
+   *  a.map(_*2)
+   *  a.map(i => i*2)
+   *   // True olan ları döndürür
+   *  a.filter(_<5)
+   *  a.filter(_%5==0)
+   *  
+   *  a.count(_%2 == 0)
+   *  a.exists(_<5)  --> true folse 
+   *  a.forall(x<10) --> return true or false
+   *  
+   *  
+   *  
+   *  a.find(_%4 == 0 )  --> return Option[Int] = Some(8)  --> RETURN TYPE IS IMPORTANT
+   *  a.partition(_<5) --> tupple return eder ikiye ayırır true false değerine göre
+   *  
+   *  a.reduce(_+_)  --> sum verir
+   *  
+   *  a.minBy(_.length)
    */
   
   
