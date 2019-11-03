@@ -15,9 +15,19 @@ object Libraries {
     
     val age = readInt()
     
-    
     val lst = buildList()
     println(concatStrings(lst))
+    
+    
+    val a = Array(1,2,3,4,5,6)
+    val b = a.find(_<3)
+    b match {
+      case Some(i) =>  println(s"Found $i")
+      case None=> println("Nothing found")
+    }
+    
+    b.getOrElse(0)
+    b.map(_*2)
     
   }
   
